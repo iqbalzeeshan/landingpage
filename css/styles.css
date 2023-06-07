@@ -63,6 +63,30 @@ a {
     margin-left: 10px;
 }
 
+/* Badges */
+/* structure */
+.badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* badge-skin */
+.badge--primary {
+    background-color: var(--color-primary);
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
 /* desktop section */
 @media screen and (min-width: 1024px) {
     body {
@@ -84,5 +108,14 @@ a {
     /* Links */
     .link-arrow {
         font-size: 1.5rem;
+    }
+
+    /* Badges */
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
