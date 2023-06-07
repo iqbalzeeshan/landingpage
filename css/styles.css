@@ -109,6 +109,27 @@ a {
     padding-left: 1.5rem;
 }
 
+/* Icons */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+    /*fill is used for only svg*/
+}
+
+.icon-container {
+    background: #f3f9fa;
+    display: inline-flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
