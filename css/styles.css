@@ -194,6 +194,20 @@ a {
     color: #fff;
 }
 
+/* ---------- Input ----------- */
+.input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    color: var(--color-headings);
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+
+}
 
 
 
@@ -238,6 +252,11 @@ a {
 
     /* ------- Button ------ */
     .btn {
+        font-size: 1.5rem;
+    }
+
+    /* ---- Input ----- */
+    .input {
         font-size: 1.5rem;
     }
 }
