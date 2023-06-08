@@ -351,6 +351,19 @@ a {
     bottom: 8px;
 }
 
+/* --------- Grid -------- */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 786px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
 
 
 /* ----- desktop section ------ */
@@ -428,5 +441,10 @@ a {
 
     .quote__organization {
         font-size: 1.6rem;
+    }
+
+    /* -----Grid ------- */
+    .grid--1x3 {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
