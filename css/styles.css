@@ -27,6 +27,11 @@ body {
     line-height: 1.5;
 }
 
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
 h1,
 h2,
 h3 {
@@ -45,6 +50,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 p {
@@ -103,7 +109,6 @@ a {
     list-style: none;
     padding-left: 0;
     /*by default browsers apply some paddings & defaults colors to list*/
-    color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -114,6 +119,7 @@ a {
 .list--tick {
     list-style-image: url('../images/tick.svg');
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -350,6 +356,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -498,18 +505,20 @@ a {
     color: #7b858b;
 }
 
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+    color: #fff;
+}
+
 .block--skewed--left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
 }
 
 .block--skewed--right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-}
-
-.block--dark .block__heading {
-    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 80%);
 }
 
 .block__header {
@@ -567,10 +576,6 @@ a {
 
 /* ---------- Hero ------------ */
 
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -626,6 +631,11 @@ a {
 }
 
 .feature__image {
+    width: 100%;
+}
+
+/* ----------- SHowcase block */
+.block-showcase__image>img {
     width: 100%;
 }
 
@@ -704,6 +714,22 @@ a {
     .feature:nth-of-type(even) .freture__content {
         order: 2;
     }
+
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase__image {
+        width: auto;
+        max-width: 70rem;
+        justify-self: end;
+    }
+
+    .block-showcase__image>img {
+        width: auto;
+        max-width: 70rem;
+    }
+
 }
 
 /* ----- desktop section ------ */
